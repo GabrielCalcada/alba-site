@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,12 +6,32 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Site de teste</title>
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
     </head>
     <body>
-        <header>
-            <h1>Hello Django</h1>
+        <header>            
+            <nav>
+                <ul class="menu">
+                    <li class="logo"><a href="#">DJANGO</a></li>
+                    <li class="item"><a href="#">Inicio</a></li>
+                    <li class="item-submenu">
+                        <a tabindex="0">Conheça</a>
+                        <ul class="submenu">
+                            <li class="subitem"><a href="#">História</a></li>
+                            <li class="subitem"><a href="#">Local</li>
+                            <li class="subitem"><a href="#">Cultura</a></li>
+                            <li class="subitem"><a href="#">Programação</a></li>
+                        </ul>
+                    </li>
+                    <li class="item"><a href="#">Praias</a></li>
+                    <li class="item"><a href="#">Como Chegar</a></li>
+                    <li class="item"><a href="#">Fale</a></li>
+                </ul>
+            </nav>
+
         </header>
     {% block content %}
     {% endblock content %}
+    <script src="script.js"></script>
     </body>
 </html>
