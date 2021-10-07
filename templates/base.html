@@ -5,11 +5,12 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Site de teste</title>
+        <!-- Os títulos das páginas mudam, logo a gente cria esse bloco para ele variar acom a s páginas -->
+        <title>{% block title %}{% endblock %}</title>
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
     </head>
     <body>
-        <header>            
+        <!-- <header>            
             <nav>
                 <ul class="menu">
                     <li class="logo"><a href="#">DJANGO</a></li>
@@ -29,9 +30,42 @@
                 </ul>
             </nav>
 
-        </header>
-    {% block content %}
-    {% endblock content %}
+        </header> -->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">DJANGO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <!-- <li class="logo"><a href="#">DJANGO</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="item-submenu">
+                        <a tabindex="0">Conheça</a>
+                        <ul class="submenu">
+                            <li class="subitem"><a class="nav-link" href="#">História</a></li>
+                            <li class="subitem"><a class="nav-link" href="#">Local</li>
+                            <li class="subitem"><a class="nav-link" href="#">Cultura</a></li>
+                            <li class="subitem"><a class="nav-link" href="#">Programação</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Praias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Como Chegar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Fale</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        {% block content %}
+        {% endblock content %}
+        <footer>
+            <p>Rodapé de página</p>
+        </footer>
+    </div>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     </body>
 </html>
