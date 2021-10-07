@@ -31,48 +31,52 @@
             </nav>
 
         </header> -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">DJANGO</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" datatarget="#navbarSuportedContent">
-            <span class="navbar-toggle-icon"></span>
-        </button>
+        <div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">DJANGO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" datatarget="#navbarSuportedContent">
+                <span class="navbar-toggle-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                <a class="nav-link" href="http://127.0.0.1:8000/">Início</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="http://127.0.0.1:8000/Praias">Praias</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="http://127.0.0.1:8000/Sobre">Sobre</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="http://127.0.0.1:8000/Como_chegar">Como Chegar</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="http://127.0.0.1:8000/Fale">Fale</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                    data-toggle="dropdown">Conheça o clube</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#"> Nossa História</a>
-                        <!-- <div class="dropdown-divider"></div> -->
-                        <a class="dropdown-item" href="#"> Local e Natureza</a>
-                        <a class="dropdown-item" href="#"> Estrutura</a>
-                    </div>
-                </li>
-            </ul>
-    </nav>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="http://127.0.0.1:8000/">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://127.0.0.1:8000/Praias">Praias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://127.0.0.1:8000/Sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://127.0.0.1:8000/Como_chegar">Como Chegar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://127.0.0.1:8000/Fale">Fale</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown">Conheça o clube</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#"> Nossa História</a>
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <a class="dropdown-item" href="#"> Local e Natureza</a>
+                            <a class="dropdown-item" href="#"> Estrutura</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+        </nav>
+        </div>
 
-        {% block content %}
-        {% endblock content %}
-        <footer>
-            <p>Rodapé de página</p>
-        </footer>
-    </div>
+            {% block content %}
+            {% endblock content %}
+            <footer id='footer'>
+                <p>Rodapé de página</p>
+            </footer>
+        
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
