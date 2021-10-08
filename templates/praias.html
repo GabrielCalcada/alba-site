@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="praias.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+  
+
+
     <section class="thumbSection">
         <h2 class="thumbTitle">Praia tal</h2>
         <div class="thumbTiles swiper-container">
@@ -31,8 +35,8 @@
           </div>
 
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
         </div>
     </section>
 
@@ -57,28 +61,28 @@
               <img class="thumbTile__image" src="../static/images/f3.jpg" alt="The Crown">
             </a>
           </div>
-        </div>
+        <!-- </div> -->
 
           <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-      </div>
+          <!-- <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
+      <!-- </div> -->
   </section>
 
   <script>
       var mySwiper = new Swiper('.swiper-container', {
           // Optional parameters
-          spaceBetween: 5,
-          slidesPerView: 2,
+          spaceBetween: 3,
+          slidesPerView: 5,
           loop: true,
           freeMode: true,
           // loopAdditionalSlides: 5,
           speed: 500,
-          // Navigation arrows
-          navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-          },
+          // // Navigation arrows
+          // navigation: {
+          //     nextEl: '.swiper-button-next',
+          //     prevEl: '.swiper-button-prev',
+          // },
           breakpoints: {
               // when window width is >= 640px
               640: {
@@ -89,5 +93,7 @@
           }
       })
   </script>
+
+  <section></section>
 
 {% endblock content %}
