@@ -4,9 +4,9 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
         <!-- Os títulos das páginas mudam, logo a gente cria esse bloco para ele variar acom a s páginas -->
-        <title>{% block title %}{% endblock %}</title>
+        <title>{% block title %} Clube de pesca Albatroz{% endblock %}</title>
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
     </head>
     <body>
@@ -33,7 +33,7 @@
         </header> -->
         <div>
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">DJANGO</a>
+            <div class="navbar-brand"><img src="../static/images/logo-alba.jpg" alt="Image" height="70" width="70" /></div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" datatarget="#navbarSuportedContent">
                 <span class="navbar-toggle-icon"></span>
             </button>
@@ -75,6 +75,7 @@
             {% endblock content %}
             <footer id='footer'>
                 <p>Rodapé de página</p>
+                <a href="https://twitter.com/gabrielcalcada2"><img src="../static/images/Twitter-social-icons-circle-blue.png" height="40" width="40" class="media-object  img-responsive img-thumbnail"></a>
             </footer>
         
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">

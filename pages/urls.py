@@ -1,9 +1,6 @@
 from django.urls import path
-from .views import HomePageView
-from .views import sobre
-from .views import praias
-from .views import como_chegar
-from .views import fale
+from .views import HomePageView, sobre, praias, como_chegar, fale
+
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
