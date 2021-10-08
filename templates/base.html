@@ -44,19 +44,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                    <a class="nav-link" href="http://127.0.0.1:8000/">Início</a>
+                    <a class="nav-link" href="{% url 'home' %}">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://127.0.0.1:8000/Praias">Praias</a>
+                        <a class="nav-link" href="{% url 'praias' %}">Praias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://127.0.0.1:8000/Sobre">Sobre</a>
+                        <a class="nav-link" href="{% url 'sobre' %}">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://127.0.0.1:8000/Como_chegar">Como Chegar</a>
+                        <a class="nav-link" href="{% url 'como_chegar' %}">Como Chegar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://127.0.0.1:8000/Fale">Fale</a>
+                        <a class="nav-link" href="{% url 'fale' %}">Fale</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
