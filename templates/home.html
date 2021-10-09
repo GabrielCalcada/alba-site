@@ -1,10 +1,134 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
+  <link rel="stylesheet" href="praias.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  
+  <!-- Em tese, add google map -->
+  <script src="./index.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- EXEMPLO DE SECTION PARA COUNTEREAR O VIDEO PARALLAX -->
+    <!-- <section  class="paracontent">
     <h2>Hello World!</h2>
-    <h2>Testando pra ver se foi</h2>
-    
-    <section class="section bg1"></section>
+    <h2>Testando pra ver se foi</h2> -->
+
+
+    <!-- EXEMPLO DE SECTION COM VIDEO EM PARALLAX -->
+<!-- </section >
+    <section class="ParaVideo">
+        <video autoplay muted loop>
+          <source src="https://cpalbatroz.com.br/site/wp-content/uploads/2020/10/Video-Sede.mp4" type="video/mp4">
+      </video>
+      <h2> Video em Backgound</h2>
+      </section>
+    <section class="parallax p1"></section> -->
+
+    <section class='video-alba'>
+        <video autoplay muted loop controls>
+            <source src="https://cpalbatroz.com.br/site/wp-content/uploads/2020/10/Video-Sede.mp4" type="video/mp4">
+        </video>
+    </section class="thumbSection">
+    <H2 text-align: center >
+        Conhceça o clube
+    </H2>
+        <h2 class="thumbTitle"></h2>
+        <div class="thumbTiles swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a class="thumbTile" href="#">
+                    <img class="thumbTile__image" src="../static/images/f1.jpg" alt="The Crown">
+                </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbTile" href="#">
+                <img class="thumbTile__image" src="../static/images/f2.jpg" alt="The Crown">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="thumbTile" href="#">
+                <img class="thumbTile__image" src="../static/images/f3.jpg" alt="The Crown">
+              </a>
+            </div>
+          </div>
+
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+        </div>
+        <script>
+            var mySwiper = new Swiper('.swiper-container', {
+                // Optional parameters
+                spaceBetween: 20,
+                slidesPerView: 3,
+                loop: false,
+                freeMode: true,
+                
+                // loopAdditionalSlides: 5,
+                speed: 500,
+                // // Navigation arrows
+                // navigation: {
+                //     nextEl: '.swiper-button-next',
+                //     prevEl: '.swiper-button-prev',
+                // },
+                breakpoints: {
+                    // when window width is >= 640px
+                    640: {
+                        slidesPerView: 5,
+                        slidesPerGroup: 5,
+                        freeMode: false
+                    }
+                }
+            })
+        </script>
+<section class="pensar-ainda">
+    <div align="center"></div>
+            <h2 > CLUBE DE PESCA ALBATROZ</h2> 
+<h3 alba> Administrativa:</h3>
+<p alba> Aurélio de Figueiredo, 40-B S /210 – Campo Grande -RJ
+CEP: 23052-000</p>
+<h3 alba>Sede Social:</h3>
+<p alba>Praia de Garatucaia – Caetés
+Rodovia Procurador Haroldo Fernandes Duarte, Km 457,9 – Angra dos Reis – RJ
+CEP: 23918-500</p>
+        </section>
+
+,<section>
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+
+    <script>
+        // Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  const uluru = { lat: -25.344, lng: 131.036 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: uluru,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
+    </script>
+
+</section>
+
+
     <ol>
         <li>Configurar templates do aplicativo páginas </li>
         <li>Pensar nos proximos aplicativos</li>

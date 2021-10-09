@@ -52,3 +52,5 @@ function closeSubmenu(e) {
    
   /* Event listener */
   document.addEventListener("click", closeSubmenu, false);
+
+// BOTÃO DE VOLTA PRA CIMA

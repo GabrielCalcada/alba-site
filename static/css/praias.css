@@ -1,6 +1,7 @@
 
 /* Galeria de fotos em slides */
 
+
 :root {
     --colorOne: #141414;
     --colorTwo: #5c5c5c;
@@ -16,6 +17,8 @@ body {
     font-family: var(--fontOne);
     background-color: var(--colorOne);
 }
+
+
 
 .headerLogo {
     width: 120px;

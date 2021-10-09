@@ -20,6 +20,11 @@
     max-width: 50px;
 }
 
+.test{
+    color: #333;
+    letter-spacing: 1px;
+}
+
 .navbar-light .navbar-nav a.nav-link {
     color: #333;
     letter-spacing: 1px;
@@ -83,4 +88,3 @@ EM CONSTRUÇÃO */
     height: 100px;
     margin-bottom: 0px;    
 } */
-

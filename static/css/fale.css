@@ -30,6 +30,44 @@ h1{
   margin-top: 150px;
 }
 
+.p1{
+  background-image: url("../images/Fundo01.jpg");
+  color: white;
+  font-size: 60px;
+}
+
+.p2{
+  background-image: url("../images/Fundo02.jpg");
+  color: white;
+  font-size: 60px;
+}
+
+
+/* Video em parallax */
+/* Como usar: Se for colocar algum texto na página, utilizar o paracontent para tirar a sobreposição do paravideo */
+
+
+.paracontent{
+  background-color: #ffffff;
+  padding: 50px 0px;
+}
+
+.ParaVideo{
+  height: 100px;
+  padding: 50px 0px;
+}
+
+.ParaVideo video{
+  min-height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -999;
+}
+
+
+
+/* 
 .parallax:nth-of-type(1){
   background-image: url("../images/Fundo01.jpg");
   color: white;
@@ -40,4 +78,4 @@ h1{
 }
 .parallax:nth-of-type(5){
   background-image: url("../images/Fundo01.jpg");
-}
+} */
