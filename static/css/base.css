@@ -80,19 +80,6 @@ footer p {
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-
-/* codigo que deixa o rodapé no fundo da página
-EM CONSTRUÇÃO */
-/* #footer {
-    position: relative;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    height: 100px;
-    margin-bottom: 0px;    
-} */
-=======
 footer a {
     
     border: 2px solid black;
@@ -108,4 +95,3 @@ footer a {
     z-index: 10;
     text-decoration: none;    
 }
->>>>>>> c88767e8901e2f4ede5882d385f1807decd6ffa5
