@@ -1,10 +1,14 @@
-.container-fluid{
+html {
+    scroll-behavior: smooth;
+}
+
+.container-fluid {
     padding: 0;
 }
 
 /* Navbar */
 
-.navbar  {
+.navbar {
     border-bottom: 1px solid #333;
     margin-bottom: 20px;
     background-color: #969494;
@@ -62,9 +66,8 @@ footer p {
     text-align: center;
     top: 50%;
     position: relative;
+    
 }
-
-
 
 *{
     padding: 0%;
@@ -72,15 +75,18 @@ footer p {
     box-sizing: border-box;
 }
 
+footer a {
+    
+    border: 2px solid black;
+}  
 
-/* codigo que deixa o rodapé no fundo da página
-EM CONSTRUÇÃO */
-/* #footer {
-    position: relative;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    height: 100px;
-    margin-bottom: 0px;    
-} */
-
+.pracima{
+    background-color: grey;
+    color: black;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 10px;    
+    right: 10px;
+    z-index: 10;
+    text-decoration: none;    
+}
