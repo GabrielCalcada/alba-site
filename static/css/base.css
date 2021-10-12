@@ -86,8 +86,7 @@ footer a {
 }  
 
 .pracima{
-    background-color: grey;
-    color: black;
+    background-color: rgb(112, 6, 6);
     border-radius: 50px;
     position: fixed;
     bottom: 10px;    

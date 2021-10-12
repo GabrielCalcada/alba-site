@@ -1,17 +1,18 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/praias.css' %}">
+{% endblock %}
 
 {% block title %} Praias Locais{% endblock %}
 {% block content %}
 
-<!DOCTYPE html>
-  <link rel="stylesheet" href="praias.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   
-  
 
-
-    <section class="thumbSection">
+  <section class="thumbSection">
         <h2 class="thumbTitle">Praia tal</h2>
         <div class="thumbTiles swiper-container">
             <!-- Additional required wrapper -->

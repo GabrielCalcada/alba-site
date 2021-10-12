@@ -1,10 +1,12 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/fale.css' %}">
+{% endblock %}
 
 {% block content %}
 Fale conosco: Oi
-<!DOCTYPE html>
-<body>
-
 <section class="parallax p1"></section>
 
   <section></section>
@@ -70,6 +72,4 @@ Fale conosco: Oi
       </video>
       <h2> Video em Backgound</h2>
       </section>
-
-</body>
 {% endblock content %}

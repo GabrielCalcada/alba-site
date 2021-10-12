@@ -8,33 +8,11 @@
         <!-- Os títulos das páginas mudam, logo a gente cria esse bloco para ele variar acom a s páginas -->
         <title>{% block title %} Clube de pesca Albatroz{% endblock %}</title>
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        {% block extrahead %}{% endblock %}        
         <link rel="stylesheet" href="{% static 'JS/script.JS' %}">
-        <link rel="stylesheet" href="{% static 'css/praias.css' %}">
-        <link rel="stylesheet" href="{% static 'css/como_chegar.css' %}">
-        <link rel="stylesheet" href="{% static 'css/fale.css' %}">
     </head>
     <body>
-        <!-- <header>            
-            <nav>
-                <ul class="menu">
-                    <li class="logo"><a href="#">DJANGO</a></li>
-                    <li class="item"><a href="#">Inicio</a></li>
-                    <li class="item-submenu">
-                        <a tabindex="0">Conheça</a>
-                        <ul class="submenu">
-                            <li class="subitem"><a href="#">História</a></li>
-                            <li class="subitem"><a href="#">Local</li>
-                            <li class="subitem"><a href="#">Cultura</a></li>
-                            <li class="subitem"><a href="#">Programação</a></li>
-                        </ul>
-                    </li>
-                    <li class="item"><a href="#">Praias</a></li>
-                    <li class="item"><a href="#">Como Chegar</a></li>
-                    <li class="item"><a href="#">Fale</a></li>
-                </ul>
-            </nav>
-
-        </header> -->
+        </header> 
         <div id="top">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="navbar-brand"><img src="../static/images/logo-alba.jpg" alt="Image" height="70" width="70" /></div>
