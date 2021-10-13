@@ -1,4 +1,39 @@
-.carousel-inner img{
+/* .carousel-inner img{
     width: 100px;
     height: 150px;
+} */
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #353535;
+    font-size: 3rem;
+    color: rgb(255, 0, 0);
+    box-shadow: rgba(3,8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(3,8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 500ms;
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+.card:hover{
+    box-shadow: rgba(2,8, 20, 0.1) 0px 0.35em 1.17em, rgba(2,8, 20, 0.1) 0px 0.175em 0.5em;
+    transform: translate(-3px) scale(1.1);
+}
+
+.basic-grid {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  /* .card {
+    grid-row: span 5;
+    grid-column: span 4/6;
+    } */
