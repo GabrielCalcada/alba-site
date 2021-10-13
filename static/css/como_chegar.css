@@ -26,13 +26,18 @@
 .card:hover{
     box-shadow: rgba(2,8, 20, 0.1) 0px 0.35em 1.17em, rgba(2,8, 20, 0.1) 0px 0.175em 0.5em;
     transform: translate(-3px) scale(1.1);
+    z-index: 1;
 }
 
 .basic-grid {
     display: grid;
     gap: 5px;
     grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
-  }
+}
+
+
+
+/* Cards com foto */
 
   .photo-grid{
     display: grid;
@@ -40,6 +45,9 @@
     grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
     grid-auto-rows: 240px;
   }
+
+
+  /* Cards animados */
 
   .animated-grid{
       height: 85vh;
@@ -53,6 +61,7 @@
       'l star star e'
       'k star star f'
       'j i h g';
+
 
       grid-template-rows: repeat(4, 25%);
       grid-template-columns: 240px auto auto 240px;
