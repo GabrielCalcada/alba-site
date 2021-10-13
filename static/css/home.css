@@ -22,26 +22,6 @@
     text-align: center;
 }
 
-.thumbText{
-    text-align: center;
-    padding: 0;
-}
-
-.thumbTitle {
-    font-size: 26px;
-    line-height: 14px;
-    font-weight: 500;
-    margin: 0 4% 12px;
-}
-
-
-.thumbTiles.swiper-container {
-    padding: 0 auto;
-}
-
-.thumbTile {
-    width: 50%;
-}
 
 .alba {
     text-align: center;
@@ -99,3 +79,45 @@
     font-size: 60px;
   }
   
+
+
+
+
+
+  .header {
+    padding: 0 2%;
+}
+
+body {
+    font-family: var(--fontOne);
+    background-color: var(--colorOne);
+}
+
+.headerLogo {
+    width: 120px;
+}
+
+.thumbSection {
+    padding-top: 3%;
+    color: var(--colorWhite);
+}
+
+.thumbTitle {
+    font-size: 16px;
+    line-height: 14px;
+    font-weight: 500;
+    margin: 0 4% 12px;
+}
+
+.thumbTiles.swiper-container {
+    padding: 0 4%;
+}
+
+.thumbTile {
+    width: 20%;
+}
+
+.thumbTile__image {
+    width: 100%;
+    border-radius: var(--tileBorderRadius);
+}
