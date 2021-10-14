@@ -4,28 +4,23 @@
 }
 
 
-:root {
-  --mmargin-top: margin-top: 10px;
-  --mmargin-bottom: margin-bottom: 10px;
-}
-.bodddy{
+/* .bodddy{
   margin-right: 110px;
   margin-left: 110px;
-}
+} */
 
 
 /* PARTE DO VÍDEO */
 .video-alba{
     /* margin-top: 0px; */
     background-color: rgb(255, 255, 255);
+    margin: 0 auto;
 }
 
 .video-alba video{
-    /* margin-left: 110px;
-    margin-right: 20px; */
-    --mmargin-top;
-    --mmargin-bottom;
-    width: 1300px;
+    width: 100%;
+    max-height: 400px;
+    object-fit: fill;
     background-image: url("../images/Fundo01.jpg");
 }
 
@@ -53,8 +48,8 @@
   .parallax{
     display: grid;
     grid-template: 1fr/1fr;
-    --mmargin-top;
-    --mmargin-bottom;
+    margin-top: 10px;
+    margin-bottom: 10px;
     /* margin-right: 110px; */
     /* margin-left: 110px; */
 
@@ -119,8 +114,8 @@
   display: grid;
   justify-items: center;
   grid-template: 50px 300px/1fr 1fr 1fr;
-  --mmargin-top;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   /* margin-left: 110px;
   margin-right: 110px; */
 }
